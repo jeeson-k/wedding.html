@@ -7,123 +7,131 @@
 
 <style>
 body {
-font-family: 'Georgia', serif;
-background: linear-gradient(to bottom, #f8f8f6, #eef0ec);
-text-align: center;
-padding: 15px;
-color: #2c2c2c;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #f8f8f6, #eef0ec);
+  text-align: center;
+  padding: 15px;
+  color: #2c2c2c;
 }
 
 .card {
-max-width: 520px;
-margin: auto;
-background: white;
-padding: 26px;
-border-radius: 22px;
-box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-border: 1px solid #eee;
+  max-width: 520px;
+  margin: auto;
+  background: white;
+  padding: 26px;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
 }
 
 h1 {
-font-size: 28px;
-color: #5f6f61;
-margin-bottom: 4px;
-letter-spacing: 0.5px;
+  font-size: 28px;
+  color: #5f6f61;
+  margin-bottom: 4px;
 }
 
 h2 {
-font-weight: normal;
-margin: 6px 0;
-font-size: 18px;
-color: #999;
+  font-weight: normal;
+  margin: 6px 0;
+  font-size: 18px;
+  color: #999;
 }
 
 .date {
-margin-top: 18px;
-font-size: 16px;
-line-height: 1.6;
-color: #555;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
 }
 
 .countdown {
-display: flex;
-justify-content: space-between;
-margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 8px;
 }
 
 .box {
-background: linear-gradient(135deg, #6b7d6e, #889b8c);
-color: white;
-padding: 12px 5px;
-border-radius: 14px;
-width: 23%;
-box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px 5px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  perspective: 600px;
 }
 
 .box h3 {
-margin: 0;
-font-size: 20px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4e5d50;
+  transition: transform 0.4s ease;
+}
+
+.flip {
+  transform: rotateX(360deg);
+}
+
+.box p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #777;
+  letter-spacing: 1px;
 }
 
 .section {
-margin-top: 28px;
+  margin-top: 28px;
 }
 
 .button {
-display: block;
-margin: 10px auto;
-padding: 13px;
-width: 85%;
-border-radius: 30px;
-text-decoration: none;
-font-size: 15px;
-font-weight: 500;
-transition: 0.3s;
+  display: block;
+  margin: 10px auto;
+  padding: 13px;
+  width: 85%;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .button:hover {
-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .map {
-background: linear-gradient(135deg, #6b7d6e, #889b8c);
-color: white;
+  background: linear-gradient(135deg, #6b7d6e, #889b8c);
+  color: white;
 }
 
 .rsvp {
-background: #2c2c2c;
-color: white;
-}
-
-.footer {
-margin-top: 22px;
-font-size: 14px;
-color: #777;
-font-style: italic;
-}
-
-.image {
-width: 100%;
-max-height: 420px;
-object-fit: cover;
-border-radius: 16px;
-margin-bottom: 18px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  background: #2c2c2c;
+  color: white;
 }
 
 .engagement {
-background: #f9f9f7;
-padding: 16px;
-border-radius: 16px;
-margin-top: 22px;
-border: 1px solid #eee;
+  background: #f9f9f7;
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 22px;
+  border: 1px solid #eee;
 }
 
-.engagement h3 {
-margin-bottom: 6px;
-color: #5f6f61;
+.footer {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
 }
 
+.image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 </style>
 </head>
 
@@ -131,11 +139,11 @@ color: #5f6f61;
 
 <div class="card">
 
-<img class="image" src="https://images.unsplash.com/photo-1519741497674-611481863552" />
+<img class="image" src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg" />
 
 <h1>Jeeson K James</h1>
 <h2>❤</h2>
-<h1>Elizabeth Liza Mathew</h1>
+<h1>Elizabath Liza Mathew</h1>
 
 <div class="date">
 Saturday, 23 May 2026<br>
@@ -143,26 +151,12 @@ Saturday, 23 May 2026<br>
 Sacred Heart Church, Chethipuzha
 </div>
 
+
 <div class="countdown">
-<div class="box">
-<h3 id="days">0</h3>
-<p>Days</p>
-</div>
-
-<div class="box">
-<h3 id="hours">0</h3>
-<p>Hours</p>
-</div>
-
-<div class="box">
-<h3 id="minutes">0</h3>
-<p>Minutes</p>
-</div>
-
-<div class="box">
-<h3 id="seconds">0</h3>
-<p>Seconds</p>
-</div>
+  <div class="box"><h3 id="days">00</h3><p>Days</p></div>
+  <div class="box"><h3 id="hours">00</h3><p>Hours</p></div>
+  <div class="box"><h3 id="minutes">00</h3><p>Minutes</p></div>
+  <div class="box"><h3 id="seconds">00</h3><p>Seconds</p></div>
 </div>
 
 <div class="section">
@@ -191,7 +185,18 @@ We joyfully invite you to celebrate our wedding 💍
 <script>
 var weddingDate = new Date("May 23, 2026 11:00:00").getTime();
 
-var x = setInterval(function() {
+function updateWithFlip(id, newValue) {
+  const el = document.getElementById(id);
+  if (el.innerHTML != newValue) {
+    el.classList.add("flip");
+    setTimeout(() => {
+      el.innerHTML = newValue;
+      el.classList.remove("flip");
+    }, 200);
+  }
+}
+
+setInterval(function() {
 
 var now = new Date().getTime();
 var distance = weddingDate - now;
@@ -201,15 +206,13 @@ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-
-document.getElementById("days").innerHTML = days;
-document.getElementById("hours").innerHTML = hours;
-document.getElementById("minutes").innerHTML = minutes;
-document.getElementById("seconds").innerHTML = seconds;
+updateWithFlip("days", String(days).padStart(2, '0'));
+updateWithFlip("hours", String(hours).padStart(2, '0'));
+updateWithFlip("minutes", String(minutes).padStart(2, '0'));
+updateWithFlip("seconds", String(seconds).padStart(2, '0'));
 
 if (distance < 0) {
-clearInterval(x);
-document.querySelector(".countdown").innerHTML = "Wedding Day 🎉";
+  document.querySelector(".countdown").innerHTML = "Wedding Day 🎉";
 }
 
 }, 1000);
